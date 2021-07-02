@@ -1,0 +1,33 @@
+@startuml
+title 주문상태 다이어그램
+[*] --> Open : 주문생성
+
+state Order {
+    state Open {
+    }
+    state Accept {
+    }
+    state Cancel {
+    }
+    state Complete {
+    }
+
+    Open --> Accept : 가게접수
+    Open --> Cancel : 자동취소, 주문취소
+    Accept --> Cancel : 접수취소
+    Accept --> PickUp : 상품픽업
+    PickUp --> DeliveryComplete : 배송완료
+    PickUp --> Cancel : 배송중취소
+    DeliveryComplete --> Complete : 주문완료
+}
+
+state Delivery {
+    state PickUp {
+    }
+    state DeliveryComplete {
+    }
+}
+
+legend 정책 : https://wiki.woowa.in/pages/viewpage.action?pageId=161801591
+center footer By B-Team
+@enduml

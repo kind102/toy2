@@ -1,0 +1,45 @@
+@startmindmap
+title 주문 도메인 기능명세와 서비스 연관관계
+
+*[#lightblue] 주문
+
+** 등록
+***[#lightgreen] 회원
+***[#lightgreen] 가게
+***[#lightgreen] 메뉴
+
+** 취소
+***[#lightgreen] 쿠폰
+***[#lightgreen] 결제
+
+** 상태변경
+*** 접수
+****[#lightgreen] 주문중계
+*** 배차
+****[#lightgreen] 주문중계
+*** 배송상태
+****[#lightgreen] 주문중계
+
+** 재주문
+
+** 조회
+
+-- 장바구니
+--- 생성
+----[#lightgreen] 회원
+----[#lightgreen] 가게
+----[#lightgreen] 메뉴
+--- 수정
+----[#lightgreen] 가게
+----[#lightgreen] 메뉴
+--- 삭제
+
+-- 결제요청
+---[#lightgreen] 결제
+---[#lightgreen] 쿠폰
+
+-- 접수요청
+---[#lightgreen] 주문중계
+
+center footer By B-Team
+@endmindmap

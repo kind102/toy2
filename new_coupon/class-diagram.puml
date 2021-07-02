@@ -1,0 +1,114 @@
+@startuml
+'skinparam classAttributeIconSize 0
+class Campaign {
+    {field} - campaignId
+'    {field} - useStartDate
+'    {field} - useEndDate
+    {field} - displayStartDate
+    {field} - displayEndDate
+    {field} - budget
+    {field} - coupons
+    {field} - targetGroup
+    {method} + isBudgetOver
+    {method} + isValidCampain
+}
+
+class PublishedCoupon {
+    {field} - seq
+    {field} - couponId
+    {field} - accountId
+    {field} - couponCode
+    {field} - coupon
+    {field} - startDate
+    {field} - endDate
+    {method} + isValidCoupon
+}
+
+class CouponUse {
+}
+
+class CouponUseHistory {
+}
+
+class Coupon {
+    {field} - couponId
+    {field} - campaignId
+    {field} - usageConditions
+    {field} - publishConditions
+    {field} - startDate
+    {field} - endDate
+    {field} - couponType
+    {field} - limitQuantity
+'    {method} + useCoupon
+    {method} + isValidCoupon
+}
+
+abstract class DiscountPolicy {
+    {field} - discountConditions
+    {method} + calculateDiscountAmount
+    {abstract} # getDiscountAmount
+}
+
+class AmountDiscountPolicy {
+    {field} - discountAmount
+    {method} # getDiscountAmount
+}
+
+class PercentDiscountPolicy {
+    {field} - discountPercent
+    {method} # getDiscountAmount
+}
+
+interface UsageCondition {
+    {method} # isValidCondition
+}
+
+class PriceUsageCondition {
+    {method} + isValidCondition
+}
+
+class PeriodUsageCondition {
+    {method} + isValidCondition
+}
+
+class ShopUsageCondition {
+    {method} + isValidCondition
+}
+
+class PublishedCouponHistory {
+}
+
+class TempPublishedCoupon {
+}
+
+'interface PublishCondition {
+'}
+
+interface TargetCondition {
+}
+
+class GenerateCouponCode {
+
+}
+
+class CampaignHistory {
+
+}
+
+Campaign o-- Coupon
+
+Campaign -right-> TargetCondition
+Coupon --* UsageCondition
+Coupon -left-* DiscountPolicy
+'Coupon --* PublishCondition
+PublishedCoupon -left-* Coupon
+PublishedCoupon --> GenerateCouponCode
+PublishedCoupon <-- PublishedCouponHistory
+CouponUse --> PublishedCoupon
+DiscountPolicy <|-left- AmountDiscountPolicy
+DiscountPolicy <|-- PercentDiscountPolicy
+
+UsageCondition <|.. PeriodUsageCondition
+UsageCondition <|.. PriceUsageCondition
+UsageCondition <|.. ShopUsageCondition
+@enduml

@@ -1,0 +1,50 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+package payment {
+    object Payment
+}
+
+package member {
+    object Member
+}
+
+package delivery {
+    object Delivery
+}
+
+package shop {
+    object Shop
+    object Menu
+}
+
+package coupon {
+    object Coupon
+}
+
+package PG {
+    object PgService
+}
+
+package order {
+    object Order
+    object CustomerInfo
+    object PaymentInfo
+    object LineItemInfo
+    object DeliveryInfo
+}
+
+order ... member
+delivery .left. order
+order ... shop
+order .right.. payment
+coupon .up.. order
+payment .left.. PG
+
+
+Order o--- CustomerInfo
+PaymentInfo ---o Order
+Order o--- LineItemInfo
+Order o--- DeliveryInfo
+
+@enduml

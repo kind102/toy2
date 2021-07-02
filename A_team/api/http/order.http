@@ -1,0 +1,47 @@
+
+### code 캠페인 생성
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "shopId": {
+    "value": 1619511174269
+  },
+  "requirement": {
+    "ownerRequirement": "",
+    "riderRequirement": ""
+  },
+  "delivery": {
+    "address": "a",
+    "addressDetail": "b",
+    "contact": "c"
+  },
+  "orderPayment": {
+    "paymentAmount": {
+      "subTotalAmount": {
+        "value": 1.1
+      },
+      "deliveryFee": {
+        "value": 1.2
+      },
+      "paymentAmount": {
+        "value": 2.3
+      }
+    },
+    "paymentMethod": "CARD"
+  },
+  "orderMenus": {
+    "values": [
+      {
+        "menuId": {
+          "value": 1
+        },
+        "name": "햄버거",
+        "price": {
+          "value": 1.1
+        }
+      }
+    ]
+  }
+}
+

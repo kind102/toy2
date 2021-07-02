@@ -1,0 +1,235 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+package shop {
+    enum ShopServiceType {
+        FIRST_PARTY
+        THIRD_PARTY
+    }
+
+    class ShopEntity {
+        Long id
+        String name
+        ShopServiceType type
+    }
+    ShopEntity::type -- ShopServiceType
+}
+
+package Order {
+    enum OrderStatus {
+        INIT
+        OPEN
+        ACCEPT
+        CANCEL
+        COMPLETE
+    }
+
+    class OrderUserEntity {
+        Long accountId
+        String name
+        String contact
+    }
+
+    class OrderShopEntity {
+        Long id
+        Long shopNo
+        String shopName
+        ShopServiceType type
+    }
+
+    OrderShopEntity::type -- ShopEntity::type
+    OrderShopEntity::shopNo -- ShopEntity::id
+    OrderShopEntity::shopName -- ShopEntity::name
+
+    package delivery {
+        enum DeliveryStatus {
+            EMPTY
+            ASSIGNED
+            UNASSIGNED
+            PICKUP
+            COMPLETE
+        }
+
+        enum DeliveryType {
+            TAKEOUT
+            DELIVERY
+        }
+
+        class OrderDeliveryEntity {
+            Long id
+            DeliveryType type
+            DeliveryStatus status
+            AddressEntity departure
+            AddressEntity destination
+            assign()
+            unassign()
+            pickup()
+            complete()
+        }
+
+        OrderDeliveryEntity::departure -- AddressEntity
+        OrderDeliveryEntity::destination -- AddressEntity
+        OrderDeliveryEntity::status -right- DeliveryStatus
+        OrderDeliveryEntity::type -right- DeliveryType
+
+        class AddressEntity {
+            String basic
+            String detail
+            String zipCode
+        }
+    }
+
+    enum ChargeType {
+        SMALL_ORDER_FEE
+        DELIVERY_FEE
+    }
+
+    class ChargeLineEntity {
+        Long id
+        ChargeType type
+        AmountEntity amount
+    }
+    ChargeLineEntity::amount -- AmountEntity
+
+    class OrderEntity {
+        Long id
+        String orderNumber
+        OrderUserEntity user
+        AmountEntity amount
+        OrderStatus status
+        Long orderShopId
+        Long orderDeliveryId
+        List<ChargeLineEntity> chargeLines
+        List<OrderLineItemEntity> lineItems
+        List<OrderPayDiscountEntity> payDiscounts
+        +pay()
+        +cancel()
+        +accept()
+        +complete()
+    }
+    OrderEntity::user -right- OrderUserEntity
+    OrderEntity::amount -- AmountEntity
+    OrderEntity::status -left- OrderStatus
+    OrderEntity::orderShopId -- OrderShopEntity::id
+    OrderEntity::orderDeliveryId -- OrderDeliveryEntity::id
+    OrderEntity::lineItems "1" *-- "many" OrderLineItemEntity
+    OrderEntity::payDiscounts "1" *-- "many" OrderPayDiscountEntity
+    OrderEntity::chargeLines "1" *-- "many" ChargeLineEntity
+
+    class OrderLineItemEntity {
+        Long id
+        Long orderId
+        Long itemId
+        String itemName
+        Integer quantity
+        AmountEntity amount
+        List<OrderLineItemOptionEntity> lineItemOptions
+        totalAmount()
+    }
+
+    OrderLineItemEntity::amount -- AmountEntity
+    OrderLineItemEntity::lineItemOptions "1" *-down- "many" OrderLineItemOptionEntity
+
+    class OrderLineItemOptionEntity {
+        Long id
+        Long orderLineItemId
+        Long itemOptionId
+        String itemOptionName
+        Integer quantity
+        AmountEntity amount
+    }
+
+    OrderLineItemOptionEntity::amount -- AmountEntity
+
+    class OrderPayDiscountEntity {
+        DiscountType type
+        Long mappingId
+        String mappingName
+        String code
+        BigDecimal value
+        BigDecimal calculatedValue
+    }
+
+    class AmountEntity {
+        BigDecimal amount
+        BigDecimal salesAmount
+        BigDecimal discountAmount
+        calculate()
+    }
+}
+
+package coupon {
+    enum DiscountType {
+        AMOUNT
+        PERCENT
+    }
+
+    OrderPayDiscountEntity -- DiscountType
+
+    class Coupon {
+        Long id
+        String code
+        String name
+        BigDecimal value
+    }
+    OrderPayDiscountEntity::mappingId -- Coupon::id
+    OrderPayDiscountEntity::mappingName -- Coupon::name
+    OrderPayDiscountEntity::code -- Coupon::code
+    OrderPayDiscountEntity::value -- Coupon::value
+}
+
+package user {
+    class UserEntity {
+        Long accountId
+        String emailAddress
+        List<UserPaymentMethodEntity> paymentMethods
+    }
+    UserEntity -- OrderUserEntity
+}
+
+package payment {
+    interface PayLineExecutor {
+        execute()
+    }
+
+    enum PayLineMethod {
+        CREDIT_CARD
+        POINT
+    }
+
+    class PayEntity {
+        Long id
+        Long orderId
+        List<PayLineEntity> payLines
+    }
+
+    PayEntity::orderId -- OrderEntity::id
+    PayEntity::payLines "1" *-- "many" PayLineEntity
+
+    class UserPaymentMethodEntity {
+        Long id
+        String cardNo
+        String cardName
+        PayLineMethod method
+    }
+
+    class PayLineEntity {
+        Long payId
+        PayLineMethod method
+        BigDecimal amount
+        String status
+    }
+    PayLineEntity::payId -- PayEntity::id
+    PayLineEntity::method -- PayLineMethod
+
+    class PayLineProvider {
+        provider
+        isSupport()
+    }
+
+    PayLineEntity <|-- PayLineExecutor
+    (PayLineEntity, PayLineExecutor) .. PayLineProvider
+}
+
+UserEntity::paymentMethods "1" *-- "many" UserPaymentMethodEntity
+@enduml

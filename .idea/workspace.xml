@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c0725d41-2997-4018-aa08-f7aad0cc1e24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/B_team/docs/domain-model/order.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/application/order/OrderPayApplicationService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/infra/order/PrimaryOrderValidator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/infra/payment/CardPayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/infra/payment/CashPayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/infra/payment/ProxyPayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/order/OrderId.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/order/OrderPayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/order/OrderRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/order/OrderStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/order/OrderValidator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/order/method/OrderPayMethod.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/payment/PayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/test/kotlin/com/bteam/order/domain/common/type/MoneyTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/test/kotlin/com/bteam/order/domain/common/type/PhoneNumberTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/test/kotlin/com/bteam/order/domain/order/OrderTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/B_team/domain/src/test/kotlin/com/bteam/order/domain/payment/PaymentTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/basket/Basket.kt" beforeDir="false" afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/basket/Basket.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/common/type/Money.kt" beforeDir="false" afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/common/type/Money.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/order/Order.kt" beforeDir="false" afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/order/Order.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/payment/Payment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/payment/Payment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/payment/PaymentType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/B_team/domain/src/main/kotlin/com/bteam/order/domain/payment/PaymentType.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/B_team/bteam">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/B_team/bteam">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pGsgTf3BpeG2UfXZLaDLG0vebM" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="adopt-openjdk-11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/B_team/docs/domain-model" />
+      <recent name="$PROJECT_DIR$/storemenu" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/B_team/docs/domain-model" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0725d41-2997-4018-aa08-f7aad0cc1e24" name="Default Changelist" comment="" />
+      <created>1614820872634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614820872634</updated>
+      <workItem from="1614820873871" duration="4248000" />
+      <workItem from="1616562373038" duration="753000" />
+      <workItem from="1616576686181" duration="504000" />
+      <workItem from="1616646494561" duration="2454000" />
+      <workItem from="1618280444526" duration="12123000" />
+      <workItem from="1618385115664" duration="361000" />
+      <workItem from="1618459633103" duration="494000" />
+      <workItem from="1618466668787" duration="1674000" />
+      <workItem from="1618815236825" duration="431000" />
+      <workItem from="1618880557839" duration="586000" />
+      <workItem from="1619071307037" duration="1545000" />
+      <workItem from="1619413027279" duration="10000" />
+      <workItem from="1619595475392" duration="584000" />
+      <workItem from="1619655744406" duration="942000" />
+      <workItem from="1619657542327" duration="296000" />
+      <workItem from="1619658566871" duration="189000" />
+      <workItem from="1619659354888" duration="2358000" />
+      <workItem from="1619740657498" duration="12000" />
+      <workItem from="1625206121020" duration="241000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="384" y="113" key="#Project_Structure" timestamp="1619657376561">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="384" y="113" key="#Project_Structure/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619657376561" />
+    <state x="384" y="113" key="#Project_Structure/0.23.1792.1017@0.23.1792.1017" timestamp="1618815546961" />
+    <state x="619" y="340" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618285012493">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="619" y="340" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1017@0.23.1792.1017" timestamp="1618285012493" />
+    <state width="1750" height="277" key="GridCell.Tab.0.bottom" timestamp="1619657527898">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="1750" height="277" key="GridCell.Tab.0.bottom/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619657527898" />
+    <state width="1750" height="277" key="GridCell.Tab.0.center" timestamp="1619657527896">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="1750" height="277" key="GridCell.Tab.0.center/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619657527896" />
+    <state width="1750" height="277" key="GridCell.Tab.0.left" timestamp="1619657527896">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="1750" height="277" key="GridCell.Tab.0.left/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619657527896" />
+    <state width="1750" height="277" key="GridCell.Tab.0.right" timestamp="1619657527898">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state width="1750" height="277" key="GridCell.Tab.0.right/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619657527898" />
+    <state x="397" y="170" key="SettingsEditor" timestamp="1619071686702">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="397" y="170" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1619071686702" />
+    <state x="530" y="144" key="new project wizard" timestamp="1618815543029">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="530" y="144" key="new project wizard/0.23.1792.1017@0.23.1792.1017" timestamp="1618815543029" />
+    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup" timestamp="1619071650845">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="561" y="248" width="670" height="676" key="search.everywhere.popup/0.23.1792.1017@0.23.1792.1017" timestamp="1619071650845" />
+  </component>
+</project>

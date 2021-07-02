@@ -1,0 +1,34 @@
+@startmindmap
+title 주문 도메인 서비스 연관관계 모델
+
+*[#lightblue] 주문
+**[#lightgreen] 회원
+**[#lightgreen] 가게
+**[#lightgreen] 메뉴
+--[#lightgreen] 중계
+--[#lightgreen] 쿠폰
+--[#lightgreen] 결제
+
+center footer By B-Team
+@endmindmap
+
+
+@startuml
+skinparam componentStyle rectangle
+
+component "주문" as ord
+component "배달" as delivery
+component "결제" as payment
+component "가게" as shop
+component "회원" as account
+component "쿠폰" as coupon
+component "동의" as agree
+coupon -- ord
+delivery -- ord
+shop -- ord
+ord -- payment
+ord -- account
+payment -- agree
+account -- agree
+coupon -- payment
+@enduml

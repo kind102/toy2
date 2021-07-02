@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bteam" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bteam" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bteam" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:bteam" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56ab6209-9817-494a-98c7-476e5d15fdc1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/domain-model/order.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/application/order/OrderPayApplicationService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/infra/order/PrimaryOrderValidator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/infra/payment/CardPayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/infra/payment/CashPayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/infra/payment/ProxyPayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/order/OrderId.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/order/OrderPayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/order/OrderRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/order/OrderStatus.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/order/OrderValidator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/order/method/OrderPayMethod.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/payment/PayService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/kotlin/com/bteam/order/domain/common/type/MoneyTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/kotlin/com/bteam/order/domain/common/type/PhoneNumberTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/kotlin/com/bteam/order/domain/order/OrderTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/kotlin/com/bteam/order/domain/payment/PaymentTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/basket/Basket.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/basket/Basket.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/common/type/Money.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/common/type/Money.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/order/Order.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/order/Order.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/payment/Payment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/payment/Payment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/payment/PaymentType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/kotlin/com/bteam/order/domain/payment/PaymentType.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/bteam">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="B_team" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rNTk9wxTRCPBI14M7wFozgw0M2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/domain-model" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.23935556" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Code with Me" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.bteam.order.application.order" />
+      <recent name="com.bteam.order.domain.order" />
+      <recent name="com.bteam.order.domain.infra.order" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.bteam.order.domain.order" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.bteam.order.domain.common.type" />
+      <recent name="com.bteam.order.domain.payment" />
+      <recent name="com.bteam.order.domain.order" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.bteam.order.domain.infra.payment" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/domain-model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.MoneyTest.금액 확인">
+    <configuration name="MoneyTest.금액 확인" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.bteam.order.domain.common.type.MoneyTest.금액 확인&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":domain:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="OrderTest.주문하기 요청 시 매번 주문번호가 생성된다" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.bteam.order.domain.order.OrderTest.주문하기 요청 시 매번 주문번호가 생성된다&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":domain:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MoneyTest.금액 확인" />
+        <item itemvalue="Gradle.OrderTest.주문하기 요청 시 매번 주문번호가 생성된다" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56ab6209-9817-494a-98c7-476e5d15fdc1" name="Default Changelist" comment="" />
+      <created>1618815687955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618815687955</updated>
+      <workItem from="1618815689192" duration="173000" />
+      <workItem from="1618816234579" duration="3266000" />
+      <workItem from="1618896128137" duration="143000" />
+      <workItem from="1618896305842" duration="247000" />
+      <workItem from="1618897201489" duration="270000" />
+      <workItem from="1618898693028" duration="2391000" />
+      <workItem from="1619658369612" duration="94000" />
+      <workItem from="1619658612645" duration="15510000" />
+      <workItem from="1619686052270" duration="497000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="384" y="113" key="#Project_Structure" timestamp="1619658644132">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="384" y="113" key="#Project_Structure/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619658644132" />
+    <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618896445187">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="360" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1618896445187" />
+    <state x="661" y="-817" key="#com.intellij.ide.util.MemberChooser" timestamp="1619679173457">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="661" y="-817" key="#com.intellij.ide.util.MemberChooser/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1619679173457" />
+    <state x="680" y="254" key="#com.intellij.ide.util.MemberChooser/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619670987543" />
+    <state x="580" y="-826" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1619686006805">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="580" y="-826" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1619686006805" />
+    <state x="680" y="335" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619670695839">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="680" y="335" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619670695839" />
+    <state x="634" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619660103724">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="634" y="285" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619660103724" />
+    <state x="705" y="318" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1619681402600">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="637" y="-738" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1619679050892" />
+    <state x="658" y="330" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619662503485" />
+    <state x="705" y="318" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.23.1920.977@0.23.1920.977" timestamp="1619681402600" />
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1619686016893">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.bottom/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1619686016893" />
+    <state width="1750" height="277" key="GridCell.Tab.0.bottom/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619662756386" />
+    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1619686016892">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.center/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1619686016892" />
+    <state width="1750" height="277" key="GridCell.Tab.0.center/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619662756385" />
+    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1619686016892">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.left/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1619686016892" />
+    <state width="1750" height="277" key="GridCell.Tab.0.left/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619662756385" />
+    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1619686016892">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="290" key="GridCell.Tab.0.right/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1619686016892" />
+    <state width="1750" height="277" key="GridCell.Tab.0.right/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619662756386" />
+    <state x="397" y="170" key="SettingsEditor" timestamp="1618896515023">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="397" y="170" key="SettingsEditor/0.23.1792.1017@0.23.1792.1017" timestamp="1618896515023" />
+    <state x="622" y="-772" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1619672990637">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="622" y="-772" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1619672990637" />
+    <state x="644" y="297" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/-68.-1057.1920.1057/0.23.1792.1017@0.23.1792.1017" timestamp="1619659072142" />
+    <state x="557" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1619671412004">
+      <screen x="-68" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="557" y="-822" width="670" height="676" key="search.everywhere.popup/-68.-1057.1920.1057/0.23.1792.1017@-68.-1057.1920.1057" timestamp="1619671412004" />
+  </component>
+</project>
